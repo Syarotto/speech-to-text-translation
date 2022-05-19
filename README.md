@@ -16,7 +16,8 @@ newgrp lorelei
 cd /corpora/LORELEI/LDC2017E64_LORELEI_Swahili_Representative_Language_Pack_Translation_Annotation_Grammar_Lexicon_and_Tools_V1.0
 ```
 
-References:
+## Resources:
 - [End-to-End_Speech-to-Text_Translation](https://github.com/Shivam0712/End-to-End_Speech-to-Text_Translation)
 - [Huggingface/speech-to-text](https://huggingface.co/docs/transformers/model_doc/speech_to_text)
 - [fairseq/speech-to-text](https://github.com/facebookresearch/fairseq/tree/main/examples/speech_to_text)
+- [MUST-C](https://ict.fbk.eu/must-c-releases/)
