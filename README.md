@@ -13,7 +13,7 @@ conda install -c conda-forge libsndfile
 The endangered language parallel dataset LORELEI can be accessed on the cluster by:
 ```
 newgrp lorelei
-/corpora/LORELEI/LDC2017E64_LORELEI_Swahili_Representative_Language_Pack_Translation_Annotation_Grammar_Lexicon_and_Tools_V1.0
+cd /corpora/LORELEI/LDC2017E64_LORELEI_Swahili_Representative_Language_Pack_Translation_Annotation_Grammar_Lexicon_and_Tools_V1.0
 ```
 
 References:
