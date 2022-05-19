@@ -1,0 +1,7 @@
+transformers==4.19.0
+torch==1.11.0
+torchaudio
+sentencepiece
+datasets
+SoundFile
+librosa
