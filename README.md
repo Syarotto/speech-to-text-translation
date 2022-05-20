@@ -20,3 +20,4 @@ References:
 - [End-to-End_Speech-to-Text_Translation](https://github.com/Shivam0712/End-to-End_Speech-to-Text_Translation)
 - [Huggingface/speech-to-text](https://huggingface.co/docs/transformers/model_doc/speech_to_text)
 - [fairseq/speech-to-text](https://github.com/facebookresearch/fairseq/tree/main/examples/speech_to_text)
+- [alokmatta/wav2vec2-large-xlsr-53-sw](https://huggingface.co/alokmatta/wav2vec2-large-xlsr-53-sw)
