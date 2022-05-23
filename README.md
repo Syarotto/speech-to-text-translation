@@ -22,3 +22,4 @@ cd /corpora/LORELEI/LDC2017E64_LORELEI_Swahili_Representative_Language_Pack_Tran
 - [fairseq/speech-to-text](https://github.com/facebookresearch/fairseq/tree/main/examples/speech_to_text)
 - [alokmatta/wav2vec2-large-xlsr-53-sw](https://huggingface.co/alokmatta/wav2vec2-large-xlsr-53-sw)
 - [MUST-C](https://ict.fbk.eu/must-c-releases/)
+- [facebook/m2m100_418M](https://huggingface.co/facebook/m2m100_418M)
