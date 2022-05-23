@@ -13,7 +13,7 @@ def evaluate():
     pred_eng_results = []
     pred_eng_with_gold_swa_results = []
     gold_engs = []
-    for file_path, gold_swa, gold_eng in tqdm(dataset):
+    for file_path, gold_swa, gold_eng in tqdm(dataset, miniters=1):
         pred_swa = swa_asr.predict(file_path)
         pred_eng = swa_nmt.predict(pred_swa)
         pred_eng_with_gold_swa = swa_nmt.predict(gold_swa)
