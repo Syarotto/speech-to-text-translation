@@ -12,7 +12,6 @@ def evaluate():
     pred_swa_results = []
     pred_eng_results = []
     pred_eng_with_gold_swa_results = []
-    gold_engs = []
     for file_path, gold_swa, gold_eng in tqdm(dataset, miniters=1):
         pred_swa = swa_asr.predict(file_path)
         pred_eng = swa_nmt.predict(pred_swa)
@@ -20,7 +19,6 @@ def evaluate():
         pred_swa_results.append(pred_swa)
         pred_eng_results.append(pred_eng)
         pred_eng_with_gold_swa_results.append(pred_eng_with_gold_swa)
-        gold_engs.append(gold_eng)
     save_dir = 'outputs/twostage'
     with open(os.path.join(save_dir, 'pred_swa.txt'), 'w') as f:
         for sent in pred_swa_results:
@@ -30,9 +28,6 @@ def evaluate():
             f.write(sent + '\n')
     with open(os.path.join(save_dir, 'pred_eng_with_gold_swa.txt'), 'w') as f:
         for sent in pred_eng_with_gold_swa_results:
-            f.write(sent + '\n')
-    with open(os.path.join(save_dir, 'gold_eng.txt'), 'w') as f:
-        for sent in gold_engs:
             f.write(sent + '\n')
 
 
