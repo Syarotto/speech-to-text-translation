@@ -1,6 +1,6 @@
 from swa_asr import swaASR
 from swa_nmt import NMT
-from dataset import iswltDataset
+from dataset import iwsltDataset
 import os
 from tqdm import tqdm
 
@@ -8,7 +8,7 @@ from tqdm import tqdm
 def evaluate():
     swa_asr = swaASR()
     swa_nmt = NMT(src_lang="sw", tar_lang="en")
-    dataset = iswltDataset(split='valid')
+    dataset = iwsltDataset(split='valid')
     pred_swa_results = []
     pred_eng_results = []
     pred_eng_with_gold_swa_results = []
