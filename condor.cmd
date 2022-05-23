@@ -1,4 +1,4 @@
-executable = src/evaluate.sh
+executable = src/predict.sh
 getenv     = true
 error      = condor.error
 log        = condor.log
