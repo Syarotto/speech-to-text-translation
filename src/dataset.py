@@ -27,5 +27,5 @@ class iswltDataset(IterableDataset):
 
 if __name__ == '__main__':
     dataset = iswltDataset(split='train')
-    for file_path, swa_text, eng_text in tqdm(dataset):
-        print(file_path, swa_text, eng_text)
+    for file_path, swa_text, eng_text in tqdm(dataset, miniters=1):
+        pass
