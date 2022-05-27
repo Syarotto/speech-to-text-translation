@@ -36,17 +36,26 @@ def cal_wer_cer(ref_path, hypo_path):
     return wer_score, cer_score
     
 
-if __name__ == '__main__':
+def main():
     output_dir = 'outputs/twostage/'
+    score_file = os.path.join('results/', 'twostage_scores.txt')
+    f = open(score_file, 'w')
     ref_path = os.path.join(output_dir, 'gold_eng.txt')
     hypo_path = os.path.join(output_dir, 'pred_eng_with_gold_swa.txt')
     bleu_score = cal_bleu(ref_path, hypo_path)
+    f.write(f'BLEU score of Swahili-English translation on golden transcription: {bleu_score}\n')
     print(bleu_score)
     hypo_path = os.path.join(output_dir, 'pred_eng.txt')
     bleu_score = cal_bleu(ref_path, hypo_path)
+    f.write(f'BLEU score of Swahili-English translation on ASR transcription: {bleu_score}\n')
     print(bleu_score)
     ref_path = os.path.join(output_dir, 'gold_swa.txt')
     hypo_path = os.path.join(output_dir, 'pred_swa.txt')
     wer_score, cer_score = cal_wer_cer(ref_path, hypo_path)
+    f.write(f'WER of Swahili speech-to-text transcription: {wer_score}, CER: {cer_score}\n')
     print(wer_score)
     print(cer_score)
+
+
+if __name__ == '__main__':
+    main()
