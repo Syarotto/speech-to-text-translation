@@ -23,3 +23,4 @@ cd /corpora/LORELEI/LDC2017E64_LORELEI_Swahili_Representative_Language_Pack_Tran
 - [alokmatta/wav2vec2-large-xlsr-53-sw](https://huggingface.co/alokmatta/wav2vec2-large-xlsr-53-sw)
 - [MUST-C](https://ict.fbk.eu/must-c-releases/)
 - [facebook/m2m100_418M](https://huggingface.co/facebook/m2m100_418M)
+- [IWSLT 2021 Swahili](https://iwslt.org/2021/low-resource)
