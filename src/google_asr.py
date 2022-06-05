@@ -14,7 +14,6 @@ def transcribe_file(speech_file):
     audio = speech.RecognitionAudio(content=content)
     config = speech.RecognitionConfig(
         encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-        sample_rate_hertz=48000,
         language_code="sw-TZ",  # sw-KE
     )
 
@@ -22,9 +21,9 @@ def transcribe_file(speech_file):
 
     # Each result is for a consecutive portion of the audio. Iterate through
     # them to get the transcripts for the entire audio file.
-    for result in response.results:
+    # for result in response.results:
         # The first alternative is the most likely one for this portion.
-        return result.alternatives[0].transcript
+    return response.results[0].alternatives[0].transcript
 
 
 if __name__ == '__main__':
