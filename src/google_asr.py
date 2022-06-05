@@ -14,7 +14,7 @@ def transcribe_file(speech_file):
     audio = speech.RecognitionAudio(content=content)
     config = speech.RecognitionConfig(
         encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-        language_code="sw-TZ",  # sw-KE
+        language_code="sw-KE",  # sw-KE, sw-TZ
     )
 
     response = client.recognize(config=config, audio=audio)
