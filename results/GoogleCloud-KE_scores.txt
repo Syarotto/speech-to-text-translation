@@ -1,0 +1,3 @@
+BLEU score of Swahili-English translation on golden transcription: 0.2060945427023327
+BLEU score of Swahili-English translation on ASR transcription: 0.07366740510387823
+WER of Swahili speech-to-text transcription: 0.5627308277210515, CER: 0.38735672456078885

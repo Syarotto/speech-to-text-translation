@@ -37,8 +37,8 @@ def cal_wer_cer(ref_path, hypo_path):
     
 
 def main():
-    output_dir = 'outputs/GoogleCloud/'
-    score_file = os.path.join('results/', 'GoogleCloud_scores.txt')
+    output_dir = 'outputs/GoogleCloud-KE/'
+    score_file = os.path.join('results/', 'GoogleCloud-KE_scores.txt')
     f = open(score_file, 'w')
     ref_path = os.path.join(output_dir, 'gold_eng.txt')
     hypo_path = os.path.join(output_dir, 'pred_eng_with_gold_swa.txt')
