@@ -25,3 +25,4 @@ To set up the Google Cloud Speech service, follow the instructions on [Install t
 - [MUST-C](https://ict.fbk.eu/must-c-releases/)
 - [facebook/m2m100_418M](https://huggingface.co/facebook/m2m100_418M)
 - [IWSLT 2021 Swahili](https://iwslt.org/2021/low-resource)
+- [Google Cloud Speech](https://cloud.google.com/speech-to-text)
