@@ -35,11 +35,7 @@ def evaluate_googleASR():
     from google_asr import transcribe_file
     dataset = iwsltDataset(split='valid')
     save_dir = 'outputs/GoogleCloud'
-    idx = -1
     for file_path, gold_swa, gold_eng in tqdm(dataset, miniters=1):
-        idx += 1
-        if idx <= 169:
-            continue
         try:
             pred_swa = transcribe_file(file_path)
         except:
