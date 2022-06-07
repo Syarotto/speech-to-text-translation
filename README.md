@@ -1,5 +1,5 @@
 # speech-to-text-translation
-
+Speech-to-text translation for Swahili
 ## Installation
 This system is tested on `python==3.8.0`, and a list of required packages can be found at [requirements.txt](https://github.com/Syarotto/hyperpartisan_news_dection/blob/main/requirements.txt). It is recommended to use [Anaconda](https://docs.anaconda.com/anaconda/install/index.html) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) to set up the environment. With `conda` installed, you may run: 
 
